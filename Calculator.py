@@ -1,39 +1,39 @@
-def soma(a, b):
+def addition(a, b):
     return print(f"{a} + {b} = {a + b}")
 
-def subtracao(a, b):
+def subtraction(a, b):
     return print(f"{a} - {b} = {a - b}")
 
-def multiplicacao(a, b):
+def multiplication(a, b):
     return print(f"{a} x {b} = {a * b}")
 
-def divisao(a, b):
+def division(a, b):
     return print(f"{a} / {b} = {a / b}")
 
 
 
 print("===================== Python Calculator =====================")
 
-print("Selecione o número da operação desejada: ")
+print("select the desired operation: ")
 
-print("1 - Soma")
-print("2 - Subtração")
-print("3 - Multiplicação")
-print("4 - Divisão")
+print("1 - addition")
+print("2 - subtraction")
+print("3 - multiplication")
+print("4 - division")
 
-opcao = int(input("Digite sua opção(1/2/3/4): "))
+choice = int(input("enter your option(1/2/3/4): "))
 
-if opcao == 0 or opcao >= 5:
+if choice == 0 or choice >= 5:
     print("Opção inválida")
 else:
-    n1 = int(input("Digite o primeiro número: "))
-    n2 = int(input("Digite o segundo número: "))
+    n1 = int(input("Enter the first number: "))
+    n2 = int(input("Enter the second number: "))
 
-    if opcao == 1:    
-     soma(n1, n2)
-    elif opcao == 2:    
-        subtracao(n1, n2)
-    elif opcao == 3:
-        multiplicacao(n1, n2)
+    if choice == 1:    
+     addition(n1, n2)
+    elif choice == 2:    
+        subtraction(n1, n2)
+    elif choice == 3:
+        multiplication(n1, n2)
     else:
-        divisao(n1, n2)
+        division(n1, n2)
